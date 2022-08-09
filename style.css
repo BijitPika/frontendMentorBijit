@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Monserrat-medium";
+  src: url(/assets/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(/assets/Fraunces-Bold.ttf);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+picture {
+  height: 410px;
+  width: 280px;
+}
+img {
+  height: 410px;
+  width: 280px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.text {
+  height: 410px;
+  width: 280px;
+  background-color: white;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  padding-left: 1.5rem;
+
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10%;
+}
+ul :first-child {
+  font-family: "Fraunces";
+  font-size: 2.063rem;
+  color: hsl(158, 36%, 37%);
+}
+ul :nth-child(2) {
+  font-family: "Monserrat-medium";
+  text-decoration: line-through;
+  color: grey;
+  padding-left: 1rem;
+  font-size: 0.813rem;
+}
+li {
+  list-style: none;
+}
+.titre {
+  font-family: "Monserrat-medium";
+  font-size: smaller;
+  letter-spacing: 5px;
+  color: grey;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding-top: 20px;
+}
+h1 {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 0.9;
+  color: black;
+  text-transform: none;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+p {
+  font-size: 14px;
+  text-transform: none;
+  font-weight: lighter;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-top: 10%;
+  font-family: "Monserrat-medium";
+  color: grey;
+}
+button img {
+  height: 16px;
+  width: 15px;
+}
+button {
+  margin-top: 10%;
+  width: 220px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  background-color: hsl(157, 20%, 38%);
+  cursor: pointer;
+}
+button p {
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+@media screen and (max-width: 640px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  picture {
+    height: 380px;
+    width: 280px;
+  }
+  picture img {
+    height: 380px;
+    width: 280px;
+  }
+  .text {
+    height: 380px;
+    width: 280px;
+  }
+  button {
+    margin-top: 5%;
+  }
+}
